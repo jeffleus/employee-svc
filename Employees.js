@@ -13,7 +13,7 @@ var sequelize = new Sequelize('CallsheetSQL', 'callsheetadmin', 'Eraser$17', {
 var Employee = sequelize.define('employee', {
   firstName: { type: Sequelize.STRING, field: 'emp_first' }, 
   lastName: { type: Sequelize.STRING, field: 'emp_last' }, 
-  startDate: { type: Sequelize.DATE, field: 'hire_date' }
+  startDate: { type: Sequelize.DATETIME, field: 'hire_date' }
 });
 
 module.exports.get = function(id) {
